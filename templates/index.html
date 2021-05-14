@@ -1,0 +1,36 @@
+<!doctype html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing script</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'index.css') }}"> 
+  </head>
+  <body>
+    <div class = "main_wrapper">
+      <div id="signature-pad" class="signature-pad">
+        <div class="signature-pad--body">
+          <canvas class="signaturePad"></canvas>
+        </div>
+        <div class="signature-pad--footer">
+          <div class="description">Sign above</div>
+    
+          <div class="signature-pad--actions">
+            <div>
+              <button type="button" class="button clear" data-action="clear">Clear</button>
+              <button type="button" class="button" data-action="undo">Undo</button>
+            </div>
+            <div>
+              <button type="button" class="button save" data-action="save-png">Save as PNG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "prediction_wrapper">
+        <h1 class = "prediction_label">Predictions : </h1>
+        <h1 class = "prediction"></h1>
+      </div>
+    </div>
+  </body>  
+  <script type="text/javascript" src="{{ url_for('static', filename = 'index.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename = 'app.js') }}"></script>
+</html>

@@ -1,0 +1,14 @@
+.signaturePad{
+    border: 1px solid black;
+}
+
+.main_wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.prediction_wrapper{
+    display:flex;
+    flex-direction: row;
+}
